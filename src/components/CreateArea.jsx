@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 function CreateArea(props) {
 
@@ -30,7 +31,7 @@ function CreateArea(props) {
 
     return (
         <div>
-            <form>
+            <form className="create-note">
                 <input 
                 name="title" 
                 onChange={handleChange} 
@@ -44,7 +45,9 @@ function CreateArea(props) {
                 placeholder="take a note..." 
                 rows="3" 
                 />
-                <button onClick={submitNote}>add</button>
+                <button onClick={submitNote}>
+                    <AddCircleIcon />
+                </button>
             </form>
         </div>
     );
