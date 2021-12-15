@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
