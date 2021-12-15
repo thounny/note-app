@@ -4,11 +4,13 @@ import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-//1. Create a new React app.
-//2. Create a App.jsx component.
-//3. Create a Header.jsx component that renders a <header> element
-//to show the Keeper App name in an <h1>.
-//4. Create a Footer.jsx component that renders a <footer> element
-//to show a copyright message in a <p> with a dynamically updated year.
-//5. Create a Note.jsx component to show a <div> element with a
-//<h1> for a title and a <p> for the content.
+// 1:: Implementing add note function 
+//Creating a constant that keeps track of title and content
+//Then pass the new note back to the App.jsx
+//Add new note to an array (state)
+//take array and render separate note components for each item
+
+// 2:: Implementing delete note function
+//callback from note component to trigger delete function
+//use filter function to filter out item that needs deletion
+//pass id over to note component, pass it back to App.jsx
